@@ -1,4 +1,4 @@
-# iOS Quick Notes app
+# iOS QNApp 
 
 ## Documentation
 
