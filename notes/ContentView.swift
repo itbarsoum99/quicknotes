@@ -14,49 +14,60 @@ struct ContentView: View {
     @State private var note4 = ""
     @State private var note5 = ""
     @State private var note6 = ""
-
+    
+    
+    init () {
+        UITextView.appearance().backgroundColor = .init(Color(red: 0.27058823529411763, green: 0.27058823529411763, blue: 0.27058823529411763))
+    }
+    
     var body: some View {
         ScrollView {
-            Text("Quick Notes")
-                .fontWeight(.bold)
-                .padding()
-                .font(.title)
-                .foregroundColor(Color(red: 0.8705882352941177, green: 0.8705882352941177, blue: 0.8705882352941177))
+            
+            HStack {
+                Text("Quick Notes")
+                    .fontWeight(.bold)
+                    .padding()
+                    .font(.title)
+                    .foregroundColor(Color(red: 0.8705882352941177, green: 0.8705882352941177, blue: 0.8705882352941177))
+                Spacer()
+            }
 
             TextEditor(text: $note1)
                 .frame(height: 200)
                 .cornerRadius(10.0)
-                .colorInvert()
-                .padding()
+                .padding([.leading, .bottom, .trailing])
+
+                
 
             TextEditor(text: $note2)
                 .frame(height: 200)
                 .cornerRadius(10.0)
-                .padding()
-                .colorInvert()
+                .padding([.leading, .bottom, .trailing])
+
             TextEditor(text: $note3)
                 .frame(height: 200)
                 .cornerRadius(10.0)
-                .padding()
-                .colorInvert()
+                .padding([.leading, .bottom, .trailing])
+
             TextEditor(text: $note4)
                 .frame(height: 200)
                 .cornerRadius(10.0)
-                .padding()
-                .colorInvert()
+                .padding([.leading, .bottom, .trailing])
+
             TextEditor(text: $note5)
                 .frame(height: 200)
                 .cornerRadius(10.0)
-                .padding()
-                .colorInvert()
+                .padding([.leading, .bottom, .trailing])
+
             TextEditor(text: $note6)
                 .frame(height: 200)
                 .cornerRadius(10.0)
-                .padding()
-                .colorInvert()
+                .padding([.leading, .bottom, .trailing])
         }
         .padding()
         .background(Color(red: 0.0784313725490196, green: 0.0784313725490196, blue: 0.0784313725490196))
+        .ignoresSafeArea(edges: .bottom)
+        
 
     }
 }
@@ -64,5 +75,6 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+.previewInterfaceOrientation(.portrait)
     }
 }
