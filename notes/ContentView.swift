@@ -17,8 +17,12 @@ struct ContentView: View {
     
     
     init () {
+<<<<<<< HEAD
         UITextView.appearance().backgroundColor = .init(Color(red: 0.14058823529411763, green: 0.14058823529411763, blue: 0.14058823529411763))
 
+=======
+        UITextView.appearance().backgroundColor = .init(Color(red: 0.27058823529411763, green: 0.27058823529411763, blue: 0.27058823529411763))
+>>>>>>> b5775d9581b36d552bd6a849e674b978332274a3
     }
     
     var body: some View {
@@ -37,12 +41,20 @@ struct ContentView: View {
                 .frame(height: 200)
                 .cornerRadius(10.0)
                 .padding([.leading, .bottom, .trailing])
+<<<<<<< HEAD
+=======
+
+                
+>>>>>>> b5775d9581b36d552bd6a849e674b978332274a3
 
             TextEditor(text: $note2)
                 .frame(height: 200)
                 .cornerRadius(10.0)
                 .padding([.leading, .bottom, .trailing])
+<<<<<<< HEAD
             
+=======
+>>>>>>> b5775d9581b36d552bd6a849e674b978332274a3
 
             TextEditor(text: $note3)
                 .frame(height: 200)
